@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img {
+	display: block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+	font-family: "Karla", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar {
+	padding-left: 2rem;
+	padding-right: 3rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	color: white;
+	background-color: #672280;
+	background-image: linear-gradient(to right, #672280, #a626d3);
 }
 
-.App-link {
-  color: #61dafb;
+.navbar nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav__title {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.form {
+	margin: auto;
+	margin-top: 3rem;
+	width: max(60vw, 400px);
+}
+
+.form__input {
+	display: flex;
+	justify-content: space-between;
+}
+
+.form__btn {
+	margin-top: 20px;
+}
+
+.form__img {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	width: 100%;
+}
+
+.form__img img {
+	width: 100%;
+	height: auto;
+}
+
+button {
+	width: 100%;
+	padding: 0.7rem;
+	font-family: inherit;
+	color: #fff;
+	background-color: #672280;
+	background-image: linear-gradient(to right, #672280, #a626d3);
+	border: none;
+	border-radius: 5px;
+}
+
+input {
+	padding: 0.7rem;
+	width: max(29vw, 190px);
+	border-radius: 5px;
+}
+
+.topText {
+	position: absolute;
+	top: 1rem;
+	font-size: 4rem;
+	font-weight: 900;
+	color: #fff;
+	text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+		-2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+		2px 2px 5px #000;
+}
+
+.bottomText {
+	position: absolute;
+	bottom: 1rem;
+	font-size: 4rem;
+	font-weight: 900;
+	color: #fff;
+	text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+		-2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+		2px 2px 5px #000;
 }
